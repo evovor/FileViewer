@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "FileViewer.h"
 #include "SFileView.h"
+#include "FileViewer.h"
 #include "GenericPlatformFile.h"
 
 
@@ -103,9 +103,7 @@ TSharedRef<ITableRow> SFileView::On_GenerateRow(TSharedRef<FFileInfo> Item, cons
 		[
 			SNew(STextBlock)
 			.Text(FText::FromString(Item->FileName))
-			.Font(FSlateFontInfo(FPaths::EngineContentDir() / TEXT("Slate/Fonts/Roboto-Bold.ttf"), 12))
-			.ColorAndOpacity(FLinearColor(1, 0, 1, 1))
-			.ShadowColorAndOpacity(FLinearColor::Black)
-			.ShadowOffset(FIntPoint(-2, 2))
+			.Font(FSlateFontInfo(FPaths::EngineContentDir() / TEXT("Slate/Fonts/Roboto-Light.ttf"), 10))
+			.ColorAndOpacity(FLinearColor(1, 0.5, 0, 1))
 		];
 }

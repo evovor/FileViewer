@@ -1,29 +1,19 @@
 // Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
 
 using UnrealBuildTool;
+using System.IO;
 
 public class FileViewer : ModuleRules
 {
-	public FileViewer(TargetInfo Target)
-	{
-		
-		PublicIncludePaths.AddRange(
-			new string[] {
-				"FileViewer/Public"
-				// ... add public include paths required here ...
-			}
-			);
-				
-		
-		PrivateIncludePaths.AddRange(
-			new string[] {
-				"FileViewer/Private",
-				// ... add other private include paths required here ...
-			}
-			);
-			
-		
-		PublicDependencyModuleNames.AddRange(
+	public FileViewer(ReadOnlyTargetRules Target) : base(Target)
+    {
+
+        PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+
+        PublicIncludePaths.Add(Path.Combine(ModuleDirectory, "Public"));
+        PrivateIncludePaths.Add(Path.Combine(ModuleDirectory, "Private"));
+
+        PublicDependencyModuleNames.AddRange(
 			new string[]
 			{
 				"Core",
