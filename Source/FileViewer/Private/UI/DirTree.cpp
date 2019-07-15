@@ -35,7 +35,7 @@ FText UDirTree::Get_ParentPath() const
 TSharedRef<SWidget> UDirTree::RebuildWidget()
 {
 	MyFileView = SNew(SFileView).ListDbClicked(BIND_UOBJECT_DELEGATE(FDbClickDelegate, DirTreeDbClick));
-	MyFileView->Refresh_FileList(FPaths::GameDir());
+	MyFileView->Refresh_FileList(FPaths::ProjectDir());
 	return MyFileView.ToSharedRef();
 }
 
