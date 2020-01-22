@@ -1,8 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "DirTree.h"
+#include "UI/DirTree.h"
 #include "FileViewer.h"
-#include "SFileView.h"
+#include "UI/SFileView.h"
 
 #define LOCTEXT_NAMESPACE "FFileViewerModule"
 

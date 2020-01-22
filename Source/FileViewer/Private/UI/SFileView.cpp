@@ -2,7 +2,7 @@
 
 #include "SFileView.h"
 #include "FileViewer.h"
-#include "GenericPlatformFile.h"
+#include "GenericPlatform/GenericPlatformFile.h"
 
 
 
