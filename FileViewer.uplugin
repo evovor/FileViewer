@@ -4,19 +4,21 @@
 	"VersionName": "1.0",
 	"FriendlyName": "FileViewer",
 	"Description": "File view plugin for listing ue4 loaded file assets",
-	"Category": "Other",
-	"CreatedBy": "Naru",
-	"CreatedByURL": "http://blog.ch-wind.com/",
-	"DocsURL": "http://blog.ch-wind.com/ue4-pak-file-view/",
+	"Category": "Evovor",
+	"CreatedBy": "Evovor Technologies Inc.",
+	"CreatedByURL": "",
+	"DocsURL": "",
 	"MarketplaceURL": "",
-	"SupportURL": "https://github.com/Arisego/FileViewer/issues",
+	"SupportURL": "",
+	"EnabledByDefault": true,
 	"CanContainContent": true,
 	"IsBetaVersion": false,
-	"Installed": false,
+	"IsExperimentalVersion": false,
+	"Installed": true,
 	"Modules": [
 		{
 			"Name": "FileViewer",
-			"Type": "Runtime",
+			"Type": "RuntimeAndProgram",
 			"LoadingPhase": "Default"
 		}
 	]
